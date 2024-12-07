@@ -1,0 +1,339 @@
+body {
+  background-color: lightgray;
+  hr {
+    border: 3px solid black;
+    width: 100%;
+  }
+}
+
+.vline {
+  width: 3px;
+  height: 80%;
+  background-color: black;
+  float: inline-start;
+  margin: 1%;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.01fr 1fr 0.01fr 1fr 0.01fr 1fr 0.01fr 1fr 0.01fr 0.1fr 0.6fr 0.01fr 0.1fr;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1"
+    " aboutme aboutme aboutme aboutme aboutme aboutme aboutme aboutme myimage myimage myimage myimage"
+    "hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2"
+    "exp exp exp exp exp exp skills skills skills skills skills skills"
+    "hr3 hr3 hr3 hr3 hr3 hr3 hr3 hr3 hr3 hr3 hr3 hr3"
+    "edu edu edu edu edu edu edu edu edu edu edu edu"
+    "hr4 hr4 hr4 hr4 hr4 hr4 hr4 hr4 hr4 hr4 hr4 hr4"
+    "blogs blogs blogs blogs blogs cer cer cer cer cer cer cer"
+    "hr5 hr5 hr5 hr5 hr5 hr5 hr5 hr5 hr5 hr5 hr5 hr5"
+    " prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead"
+    "prj1 prj1 prj1 prj2 prj2 prj2 prj3 prj3 prj3 prj4 prj4 prj4 "
+    "hr6 hr6 hr6 hr6 hr6 hr6 hr6 hr6 hr6 hr6 hr6 hr6"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.hr1 {
+  grid-area: hr1;
+}
+.hr2 {
+  grid-area: hr2;
+}
+.hr3 {
+  grid-area: hr3;
+}
+.hr4 {
+  grid-area: hr4;
+}
+.hr5 {
+  grid-area: hr5;
+}
+.hr6 {
+  grid-area: hr6;
+}
+
+.header{
+  grid-area: header;
+  background-color: azure;
+  text-align: center;
+  margin-bottom: 5px;
+}
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(227, 190, 190);
+  width: 180px;
+  grid-area: nav;
+  img {
+    width: 20px;
+    margin: 10px;
+  }
+}
+
+.aboutmecontent {
+  background: linear-gradient(to bottom,  rgb(255, 255, 255), #a3c6d4);
+  grid-area: aboutme;
+  padding: 50px;
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.myimage {
+  background: linear-gradient(to bottom,  rgb(255, 255, 255), #a3c6d4);
+  grid-area: myimage;
+  
+  img {
+    width: 250px;
+    padding: 50px;
+    margin-left: 120px;
+  }
+}
+
+.experience {
+  grid-area: exp;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(219, 189, 177)
+  );
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 50px;
+    float: inline-start;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  span {
+    width: 600px;
+    float: inline-start;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+.skills {
+  
+  grid-area: skills;
+  background: rgb(214, 215, 196);
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 50px;
+    margin-top: 20px;
+    float: inline-start;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  span {
+    margin-top: 20px;
+    float: inline-start;
+    width: 600px;
+  }
+}
+
+.education {
+  grid-area: edu;
+  padding: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(181, 207, 192)
+  );
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 50px;
+    float: inline-start;
+    margin: 20px 50px 0px 50px;
+  }
+  a {
+    width: 1200px;
+    margin: 20px;
+    float: inline-start;
+  }
+}
+
+.blogs {
+  background: rgb(198, 193, 217);
+  grid-area: blogs;
+  border-right: 3px solid black;
+  h2 {
+    text-align: center;
+  }
+}
+
+.blog {
+  height: 130px;
+  img {
+    width: 100px;
+    float: inline-start;
+  }
+  span {
+    width: 500px;
+    float: inline-start;
+  }
+}
+.certification {
+  grid-area: cer;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(208, 188, 209)
+  );
+  h3 {
+    text-align: center;
+  }
+}
+.cer {
+  height: 268px;
+}
+.certificate {
+  float: inline-start;
+  width: 200px;
+  margin-left: 30px;
+  padding: 10px;
+  a {
+    float: left;
+  }
+  img {
+    width: 100px;
+    margin-left: 30px;
+  }
+}
+#prjhead{
+  grid-area: prjhead;
+  margin: 0px;
+  background: rgb(185, 182, 179);
+}
+.project {
+  background: rgb(185, 182, 179);
+  
+  float: inline-start;
+
+  img {
+    width: 100px;
+    margin-left: 100px;
+  }
+  span {
+    float: left;
+  }
+}
+#project1 {
+  grid-area: prj1;
+}
+#project2 {
+  grid-area: prj2;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+#project3 {
+  grid-area: prj3;
+  border-right: 2px solid black;
+}
+#project4 {
+  grid-area: prj4;
+}
+
+footer {
+  grid-area: footer;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(227, 190, 190);
+  img {
+    width: 20px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    div {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    hr {
+      margin: 0px;
+    }
+  }
+  .vline {
+    display: none;
+  }
+  .grid-box {
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 0.1fr 0.001fr 1fr 0.5fr 0.001fr 0.7fr 0.7fr 0.001fr 0.8fr 0.001fr 0.6fr 0.9fr 0.001fr 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.001fr 0.1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "hr1"
+      "aboutme"
+      "myimage"
+      "hr2"
+      "exp"
+      "skills"
+      "hr3"
+      "edu"
+      "hr4"
+      "blogs"
+      "cer"
+      "hr5"
+      "prjhead"
+      "prj1"
+      "prj2"
+      "prj3"
+      "prj4"
+      "hr6"
+      "footer";
+  }
+
+  .myimage {
+    width: 600px;
+    padding-left: 0px;
+    
+  }
+  .experience {
+    span {
+      width: 500px;
+    }
+  }
+  .skills {
+    border-top: 4px solid black;
+    span {
+      width: 500px;
+    }
+  }
+  .education {
+    a {
+      width: 500px;
+    }
+  }
+  .blogs {
+    border: none;
+    padding: 10px;
+  }
+  .certification {
+    border-top: 4px solid black;
+  }
+  .certificate {
+    width: 500px;
+    margin-left: 0px;
+  }
+  .project {
+    padding: 10px;
+    border: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
